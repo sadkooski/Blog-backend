@@ -26,7 +26,17 @@ const swaggerOptions = {
           url: 'http://localhost:3000',
         },
       ],
+      components: {
+        securitySchemes: {
+          bearerAuth: {
+            type: 'http',
+            scheme: 'bearer',
+            name: 'Authorization',
+          }
+        }}      
     },
+
+
     apis: ['./routes/*.js'], // Path to the API routes
   };
   
@@ -46,3 +56,6 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+
+
+module.exports = app;

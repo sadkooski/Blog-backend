@@ -6,7 +6,7 @@ const router = express.Router();
 
 /**
  * @swagger
- * /posts/{id}/like:
+ * /api/posts/{id}/like:
  *   get:
  *     summary: Get all likes for a post
  *     tags: [Like]
@@ -31,7 +31,7 @@ router.get('/:id/like', likeController.getLikesByPostId);
 
 /**
  * @swagger
- * /posts/{id}/like:
+ * /api/posts/{id}/like:
  *   post:
  *     summary: Add a like to a post
  *     tags: [Like]

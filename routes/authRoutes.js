@@ -53,6 +53,10 @@ router.post('/register', authController.register);
  *                 type: string
  *               password:
  *                 type: string
+ *           example:
+ *            email: test
+ *            password: test
+ *    
  *     responses:
  *       200:
  *         description: Login successful, returns JWT token
